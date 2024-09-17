@@ -1,0 +1,338 @@
+.vehicle-details{
+    margin-bottom: 10px;
+}
+.rainbow-logo-img{
+    height: 47px;
+    width: auto;
+}
+.attachment-img{
+    height: 50px;
+}
+.vehicle-details-content li{
+    font-size: 12px;
+}
+.custom-compare-btn:focus {
+    outline: none!important;
+}
+
+.vehicle-details-content li a{
+    font-size: 16px;
+}
+
+.brandAccordion{
+    color: black;
+    box-shadow: none;
+    height: 50px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+}
+.brandTitle{
+    padding-top: 10px;
+}
+.selectFromTo{
+    color: black;
+    box-shadow: none;
+    height: 50px;
+    padding: 8px 15px;
+    /*padding-right: 50px;*/
+}
+
+.filter_icon {
+    display: none;
+    font-size: 18px;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
+    float: left;
+    text-align: center;
+    line-height: 45px;
+    border: 1px solid #CED4DA;
+    border-radius: 4px;
+}
+.filter_icon .ti-layout-list-thumb {
+    font-size: 24px;
+    line-height: 45px;
+}
+.filter_icon.active {
+    background-color: #FF324D;
+    color: #fff;
+    border-color: #ff324d;
+}
+@media only screen and (max-width: 575px) {
+    .filter_icon{
+        display: block;
+    }
+    .specification-tab{
+
+    }
+    .specification-table-content{
+        /*display: none;*/
+    }
+}
+.widget ul,li{
+    margin: 0;
+    padding: 0;
+}
+.product_description ul,li{
+    margin: 0;
+    padding: 0;
+}
+
+#example tr > *:first-child {
+    position: -webkit-sticky;
+    position: sticky;
+    left: 0;
+    min-width: 6rem;
+    z-index: 1;
+}
+
+.table>:not(:first-child) {
+     border-top: 1px solid lightgray !important;
+}
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: solid !important;
+    border-width: 0;
+}
+
+#example tr > *:first-child::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #fbfbfb;
+    z-index: -1;
+}
+
+/*.wrapper {*/
+/*    overflow-x: scroll;*/
+/*}*/
+
+/*td {*/
+/*    min-width: 50px;*/
+/*}*/
+
+/*.fixed {*/
+/*    position: absolute;*/
+/*    background: white!important;*/
+/*}*/
+
+
+.product_sort_info ul,li,ol{
+    margin: 0;
+    padding: 0;
+}
+.ck .ck-editor{
+    width: 100% !important;
+}
+.ck.ck-reset.ck-editor.ck-rounded-corners{
+    width: 100% !important;
+}
+.item_info_content{
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+@media (max-width: 575px) {
+    .order_review{
+        padding: 10px!important;
+    }
+    .offcanvas-body{
+        padding: 0!important;
+    }
+    #descriptionTd{
+        padding-top: 100px;
+    }
+    .offcanvas-header{
+        justify-content: end!important;
+    }
+}
+@media (max-width: 768px) {
+    .shop_container.list .product .product_img {
+        max-width: 391px;
+    }
+    #firstTh{
+        padding-bottom: 70px;
+    }
+}
+@media only screen and (min-width: 991px) and (max-width: 1180px) {
+    .shop_container.list .product .product_img {
+        max-width: 350px;
+    }
+
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    .shop_container.list .product .product_img {
+        max-width: 350px;
+    }
+    #descriptionTd{
+        padding-top: 40px;
+    }
+}
+@media (min-width: 768px) {
+    .selectFromTo{
+        /*padding-right: 80px;*/
+    }
+    .collapse.dont-collapse-sm {
+        display: block;
+        height: auto !important;
+        visibility: visible;
+    }
+}
+
+/*
+==========================================================
+home-page main banner
+==========================================================
+*/
+.image_cover{
+    width: 100%;
+}
+.card-border{
+    border-radius: 20px !important;
+}
+.top-banner{
+    width: 100%;
+    /*background: url("https://github.blog/wp-content/uploads/2020/12/layers-loop.h264.2020-12-21-11_16_56.gif?resize=640%2C409") no-repeat center;*/
+    /*background: url("https://wallpapercave.com/wp/wp3704690.png") no-repeat center;*/
+    background-size: cover;
+    padding: 16.87rem 0 9.375rem;
+}
+.shop_now{
+    margin-top: 100px;
+}
+.title_sub{
+    color: #FF324D;
+}
+#shop_now_banner{
+    height: 400px;
+    width: 100%;
+    /*background-image:*/
+    /*        linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)),*/
+    /*        url('https://wallpaperaccess.com/full/4232476.jpg');*/
+    background-size: cover;
+    /*padding: 8.87rem 0 9.375rem;*/
+}
+.image_corner{
+    border-radius: 10px;
+}
+.link-color{
+    color: #0081df;
+}
+.link-head-color{
+    color: #445670;
+}
+.cat-border-radius{
+    border-radius: 5px;
+}
+
+.heading_cat_at{
+    padding:.5rem 1rem;
+    margin-bottom:0;
+    background-color:rgba(0,0,0,.03);
+    border-bottom:1px solid rgba(0,0,0,.125)
+}
+
+.mega-menu-new {
+    display: table;;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+#tab-section{
+    background-image:
+            linear-gradient(to left, rgba(245, 246, 252, 0.52), rgba(0, 0, 0, 0.8)),
+            url('https://wallpaperaccess.com/full/4232476.jpg');
+    background-size: cover;
+    padding: 3.87rem 0 4.375rem;
+}
+.drop{
+    font-size: 14px;
+}
+.drop:focus{
+    box-shadow: transparent!important;
+}
+.zindex-header{
+    z-index: 2000;
+}
+.lng_dropdown ul{
+   padding: 0!important;
+}
+#tab-container{
+    background: #ffffff96;
+    border-radius: 10px;
+}
+.bg-color-section{
+    background: #f9f9f9;
+}
+.content{
+    display: grid;
+    grid-auto-rows: minmax(min-content, max-content);
+    grid-template-columns: auto 1fr;
+}
+.vertical{
+    transform: rotate(180deg);
+    writing-mode: vertical-lr;
+    text-align: center;
+}
+.vertical-text{
+    font-weight: bolder;
+    color: lightgray;
+    font-size: 14px;
+}
+.small-font{
+    font-size: 8px;
+}
+.text-them-color{
+    color: #FF324D;
+}
+.bg-gray{
+    background: lightgray;
+}
+.text-font{
+    font-size: 12px;
+}
+@media (max-width: 575px) {
+    #tab-section{
+        padding: 2.87rem 0 4.375rem;
+    }
+    .slick-next
+    {
+        right: 0px !important;
+    }
+    .slick-prev
+    {
+        left: 0px !important;
+    }
+}
+.scrollbar::-webkit-scrollbar {
+    width: 3px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background-color: #b9b9b9;
+}
+.scrollbar{
+    scrollbar-width: thin;
+}
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+    #tab-section{
+        padding: 2.87rem 0 4.375rem;
+    }
+}
+
+.text-custom ul{
+    list-style: none!important;
+    padding: 0;
+}
+.text-custom ul li{
+    color: #d73434!important;
+    font-size: 12px!important;
+}
+

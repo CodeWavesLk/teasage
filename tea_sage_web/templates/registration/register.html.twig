@@ -1,0 +1,88 @@
+{# {% extends 'base.html.twig' %} #}
+
+{# {% block title %}Register{% endblock %} #}
+
+{# {% block body %} #}
+{#    <h1>Register</h1> #}
+
+{#    {{ form_errors(registrationForm) }} #}
+
+{#    {{ form_start(registrationForm) }} #}
+{#        {{ form_row(registrationForm.email) }} #}
+{#        {{ form_row(registrationForm.plainPassword, { #}
+{#            label: 'Password' #}
+{#        }) }} #}
+{#        {{ form_row(registrationForm.agreeTerms) }} #}
+
+{#        <button type="submit" class="btn">Register</button> #}
+{#    {{ form_end(registrationForm) }} #}
+{# {% endblock %} #}
+
+
+{% extends 'base.html.twig' %}
+{% block body %}
+    <main style=" ">
+        <div class="container">
+            <section
+                    class="section register min-vh-100 d-flex flex-column align-items-center justify-content-center py-4">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-md-6 d-flex flex-column align-items-center justify-content-center">
+                            <div class="card mb-3">
+                                <div class="card-body"
+                                     style="box-shadow: 20px 20px 60px #1165304a, -20px -20px 60px #ffffff;">
+                                    <div class="pb-2 text-center">
+                                        <img src="{{ asset('img/tea/tea_logo.png') }}" class="login-logo" alt="" style="width:25% !important;"/>
+                                        <p class="text-center small">User Registration</p>
+                                    </div>
+                                    <div class="error-message text-center"> {{ form_errors(registrationForm) }}</div>
+                                    <div class="row g-3">
+                                        {{ form_start(registrationForm) }}
+                                        <div class="col-12">
+                                            <label for="username" class="form-label">User Name </label>
+                                            {{ form_widget(registrationForm.name, {'attr':{'class':"form-control"}}) }}
+                                        </div>
+                                        <div class="col-12">
+                                            <label for="username" class="form-label">Email </label>
+                                            {{ form_widget(registrationForm.email, {'attr':{'class':"form-control"}}) }}
+                                        </div>
+
+                                        {% if registrationForm.password is defined %}
+                                            {% for password in registrationForm.password %}
+                                                <div class="col col-md-12">
+                                                    <label for="FormControlInputCode"
+                                                           class="form-label">{{ form_label(password) }}</label><span><small
+                                                                class="text-warning">*</small></span>
+                                                    {{ form_widget(password, {'attr':{'class':"form-control"}}) }}
+                                                    <div class="form-error">
+                                                        {{ form_errors(password) }}
+                                                    </div>
+                                                </div>
+                                            {% endfor %}
+                                        {% endif %}
+
+
+                                        <div class="col-12 mt-2">
+                                            {{ form_widget(registrationForm.submit, {'label': 'Register', 'attr':{'class':'btn btn-primary w-100 gradiant-btn'}}) }}
+                                        </div>
+                                        {{ form_end(registrationForm) }}
+
+                                        <div class="col-12">
+                                            <p class="small mb-0">Have an account? <a
+                                                        href="{{ path('app_login') }}">Login</a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+{% endblock %}
+

@@ -1,0 +1,54 @@
+.container {
+    margin-top: 50px;
+}
+.card-header {
+    font-size: 1.5rem;
+    background-color: #28a745;
+    color: white;
+}
+.disease-details img, .fertilizer-details img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+}
+.fertilizer-details table th, .fertilizer-details table td {
+    vertical-align: middle;
+}
+
+.bio-info {
+    color: #89817e;
+}
+
+.bio-row {
+    width: 100%;
+    float: left;
+    padding:0 20px;
+}
+
+.bio-row p span {
+    width: 140px;
+    display: inline-block;
+}
+
+.table-success thead tr th,
+.table-success tbody tr td,
+.bio-row li,
+.bio-row p{
+    font-size: 15px;
+}
+
+.bio-row-concierge {
+    width: 100%;
+    float: left;
+    padding:0 20px;
+}
+
+.bio-row-concierge p span {
+    width: 128px;
+    display: inline-block;
+}
+
+.bio-row-concierge p{
+    /*font-size: 14px;*/
+    color: #5D615D!important;
+}

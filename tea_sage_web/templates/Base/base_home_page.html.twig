@@ -1,0 +1,33 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    {% if title is defined %}
+        TeaSage
+    {% else %}
+      TeaSage
+    {% endif %}
+{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block body %}
+
+    <!-- Top Bar Start -->
+    {% include 'Base/top-header.html.twig' %}
+    {% include 'Base/header.html.twig' %}
+    <!-- Top Bar End -->
+
+    <div class="main_content">
+        <!-- START MAIN CONTENT -->
+        {% block page_content %}
+        {% endblock page_content %}
+        <!-- END MAIN CONTENT -->
+        <!-- newsletter -->
+    </div>
+    <!-- Start footer -->
+    {% include 'Base/footer.html.twig' %}
+
+{% endblock %}
+
+
+
+

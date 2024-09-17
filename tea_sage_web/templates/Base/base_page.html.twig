@@ -1,0 +1,26 @@
+{% extends "base.html.twig" %}
+{% block title %}
+    {% if title is defined %}
+        TeaSage
+    {% else %}
+       TeaSage
+    {% endif %}
+{% endblock %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('app') }}
+{% endblock %}
+{% block body %}
+    {% include 'Base/header.html.twig' %}
+    <main class="main">
+        {% block page_content %}
+
+        {% endblock page_content %}
+    </main>
+    <!-- Start footer -->
+    {% include 'Base/footer.html.twig' %}
+
+{% endblock %}
+
+
+
+

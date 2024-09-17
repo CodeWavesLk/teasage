@@ -1,0 +1,87 @@
+{% extends "Base/base_page.html.twig" %}
+{% block stylesheets %}
+    {{ encore_entry_link_tags('fertilizer') }}
+{% endblock %}
+ {% block page_content %}
+     <!-- Services Section -->
+     <hr>
+     <div class="container">
+         <div class="card mb-5">
+             <div class="card-header text-center">
+                 Description and Recommended Fertilizers
+             </div>
+             <div class="card-body">
+                 <div class="disease-details mb-3">
+                     <div class="panel-body bio-info mt-2">
+                         <div class="row">
+                             <div class="bio-row">
+                                 <p><span class="bio-row-heading"><b>Name</b> </span>: &nbsp;{{ disease.name }}</p>
+                             </div>
+                             <div class="bio-row">
+                                 <p><span class="bio-row-heading"><b>Scientific Name</b> </span>: &nbsp;{{ description.scientificName }}</p>
+                             </div>
+                             <div class="bio-row">
+                                 <p><span class="bio-row-heading"><b>Seasonality</b> </span>: &nbsp;{{ description.seasonality }}</p>
+                             </div>
+                             <div class="bio-row">
+                                 <p><span class="bio-row-heading"><b>Damages</b> </span>: &nbsp; {% for damage in description.damage %}
+                                         <li>{{ damage }}</li>
+                                     {% endfor %}
+                                 </p>
+                             </div>
+                             <div class="bio-row">
+                                 <p><span class="bio-row-heading"><b>Affected Areas</b> </span>: &nbsp; {% for area in description.affectedAreas %}
+                                         <li>{{ area }}</li>
+                                     {% endfor %}
+                                 </p>
+                             </div>
+
+                         </div>
+                 </div>
+                 </div>
+
+                 <div class="disease-details text-center mt-2">
+                     {% for image in images %}
+                         <img id="disease-image" src="{{ asset('img/tea-diseases/' ~ code ~ '/' ~ image) }}" alt="Disease Image" class="img-fluid mb-3">
+                     {% endfor %}
+                 </div>
+
+                 <!-- Fertilizer details section -->
+                 <div class="fertilizer-details mt-5 ">
+                     <h5 style="color:#116530"><b>Recommended Fertilizers</b></h5>
+                     <div class="table-responsive">
+                         <table class="table table-bordered table-hover">
+                             <thead class="table-success">
+                             <tr>
+                                 <th>Fertilizer Name</th>
+                                 <th>Type</th>
+                                 <th>Description</th>
+                                 <th>Chemical Composition</th>
+                                 <th>Application Method</th>
+                                 <th>Optimal Timing</th>
+                             </tr>
+                             </thead>
+                             <tbody id="fertilizer-table">
+                              {% for fertilizer in fertilizers %}
+                                  <tr>
+                                      <td>{{ fertilizer.name }}</td>
+                                      <td>{{ fertilizer.type }}</td>
+                                      <td>{{ fertilizer.description }}</td>
+                                      <td>{{ fertilizer.chemicalComposition }}</td>
+                                      <td>{{ fertilizer.applicationMethod }}</td>
+                                      <td>{{ fertilizer.optimalTiming }}</td>
+                                  </tr>
+
+                             {% endfor %}
+                             </tbody>
+                         </table>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+
+ {% endblock page_content %}
+{% block javascripts %}
+    {{ encore_entry_script_tags('fertilizer') }}
+{% endblock %}
